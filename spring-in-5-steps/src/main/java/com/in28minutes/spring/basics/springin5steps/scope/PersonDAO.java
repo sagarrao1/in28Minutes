@@ -6,17 +6,16 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class PersonDAO {
 
 	@Autowired
-	JdbcConnnection jdbcConnection;
+	JdbcConnection jdbcConnection;
 
-	public JdbcConnnection getJdbcConnection() {
+	public JdbcConnection getJdbcConnection() {
 		return jdbcConnection;
 	}
 
-	public void setJdbcConnection(JdbcConnnection jdbcConnection) {
+	public void setJdbcConnection(JdbcConnection jdbcConnection) {
 		this.jdbcConnection = jdbcConnection;
 	}
 	

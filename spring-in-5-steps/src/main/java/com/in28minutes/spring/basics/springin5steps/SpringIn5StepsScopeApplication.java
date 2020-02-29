@@ -17,7 +17,7 @@ public class SpringIn5StepsScopeApplication {
 
 	public static void main(String[] args) {
 		
-		ApplicationContext applicationContext = 
+		AnnotationConfigApplicationContext applicationContext = 
 					new AnnotationConfigApplicationContext(SpringIn5StepsScopeApplication.class);				
 		
 		PersonDAO personDAO = applicationContext.getBean(PersonDAO.class);		
@@ -31,6 +31,7 @@ public class SpringIn5StepsScopeApplication {
 		LOGGER.info("{}",personDAO2);
 		LOGGER.info("{}",personDAO2.getJdbcConnection());
 		
+		applicationContext.close();
 		
 		
 	}

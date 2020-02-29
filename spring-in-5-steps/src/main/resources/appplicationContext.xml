@@ -7,8 +7,7 @@
    						http://www.springframework.org/schema/context 
     					http://www.springframework.org/schema/context/spring-context.xsd">
      
-    <context:component-scan base-package="com.in28minutes.spring.basics.springin5steps.xml"/>    
-    
+    <context:component-scan base-package="com.in28minutes.spring.basics.springin5steps.xml"/>      
     
     <bean id="xmlJdbcConnection" class="com.in28minutes.spring.basics.springin5steps.xml.XmlJdbcConnection"></bean>
     

@@ -12,16 +12,20 @@ public class SpringIn5StepsXmlApplication {
 
 	public static void main(String[] args) {
 		
-		ClassPathXmlApplicationContext applicationContext = 
-				new ClassPathXmlApplicationContext("appplicationContext.xml");
+		try(ClassPathXmlApplicationContext applicationContext = 
+				new ClassPathXmlApplicationContext("appplicationContext.xml")){
 		
 //		AnnotationConfigApplicationContext applicationContext =				
 //				new AnnotationConfigApplicationContext(SpringIn5StepsXmlApplication.class);
 
+			
+			LOGGER.info("Beans loaded -> {}", (Object) applicationContext.getBeanDefinitionNames());
+			LOGGER.info("beans count -> {}",applicationContext.getBeanDefinitionCount());
+			
 		XmlPersonDAO xmlPersonDAO = applicationContext.getBean(XmlPersonDAO.class);		
 		LOGGER.info("info {}", xmlPersonDAO );
 		LOGGER.info("info 2{}", xmlPersonDAO.getXmlJdbcConnection());
-				
+		}
 	}
 
 	

@@ -29,6 +29,17 @@ public class BinarySearchImpl {
 		//Return the result		
 		return 3;
 	}
+
+	public SortAlgorithm getSortAlgorithm() {
+		return sortAlgorithm;
+	}
+
+	public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
+		this.sortAlgorithm = sortAlgorithm;
+	}
+	
+	
+	
 	
 //	@PostConstruct
 //	public void postcostruct(){

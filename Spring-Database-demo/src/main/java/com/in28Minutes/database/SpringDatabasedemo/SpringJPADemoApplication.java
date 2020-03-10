@@ -38,7 +38,7 @@ public class SpringJPADemoApplication implements CommandLineRunner{
 		
 		repository.deleteById(10004);
 		
-		//		logger.info("\n All users-> {} " ,dao.find_All());
+		logger.info("\n All users-> {} " ,repository.find_All());
 //		
 //		
 //		logger.info("\n All users-> {} " ,dao.find_All());

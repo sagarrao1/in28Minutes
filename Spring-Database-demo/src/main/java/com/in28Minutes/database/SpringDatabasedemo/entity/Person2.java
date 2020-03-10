@@ -4,11 +4,13 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 
 import org.springframework.stereotype.Repository;
 
 @Repository
 @Entity
+@NamedQuery(name="find_All_persons", query="select p from Person2 p")
 public class Person2 {
 	@Id
 	@GeneratedValue

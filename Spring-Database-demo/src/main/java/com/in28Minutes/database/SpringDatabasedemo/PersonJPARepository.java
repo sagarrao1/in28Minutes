@@ -1,6 +1,9 @@
 package com.in28Minutes.database.SpringDatabasedemo;
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
@@ -16,9 +19,10 @@ public class PersonJPARepository {
 	EntityManager entityManager;
 	
 
-//	public List<Person> find_All() {
-//		return jdbcTemplate.query("select * from person", new CustomRowMapper());
-//	}
+	public List<Person2> find_All() {
+		TypedQuery<Person2> createNamedQuery = entityManager.createNamedQuery("find_All_persons", Person2.class);
+		return createNamedQuery.getResultList();
+	}
 
 	public Person2 findById(int id) {
 		return entityManager.find(Person2.class, id); // jpa

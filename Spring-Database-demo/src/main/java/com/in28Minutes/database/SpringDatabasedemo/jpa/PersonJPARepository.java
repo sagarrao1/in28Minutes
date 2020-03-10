@@ -1,4 +1,4 @@
-package com.in28Minutes.database.SpringDatabasedemo;
+package com.in28Minutes.database.SpringDatabasedemo.jpa;
 import java.util.List;
 
 import javax.persistence.EntityManager;

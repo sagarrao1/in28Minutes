@@ -1,3 +1,4 @@
+/*
 create table person
 (
    id integer not null,
@@ -25,3 +26,5 @@ INSERT INTO PERSON2 (ID, NAME, LOCATION, BIRTH_DATE )
 VALUES(10003,  'Pieter', 'Amsterdam',sysdate());
 INSERT INTO PERSON2 (ID, NAME, LOCATION, BIRTH_DATE ) 
 VALUES(10004,  'James2', 'New York',sysdate());
+
+*/

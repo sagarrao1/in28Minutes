@@ -10,9 +10,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.in28Minutes.database.SpringDatabasedemo.entity.Person2;
+import com.in28Minutes.database.SpringDatabasedemo.jpa.PersonJPARepository;
 
-@SpringBootApplication
-public class SpringJPADemoApplication implements CommandLineRunner{
+//@SpringBootApplication
+public class JPADemoApplication implements CommandLineRunner{
 
 	private Logger logger= LoggerFactory.getLogger(this.getClass());
 	
@@ -20,7 +21,7 @@ public class SpringJPADemoApplication implements CommandLineRunner{
 	PersonJPARepository repository;
 	
 	public static void main(String[] args) {
-		SpringApplication.run(SpringJPADemoApplication.class, args);
+		SpringApplication.run(JPADemoApplication.class, args);
 	}
 
 	@Override

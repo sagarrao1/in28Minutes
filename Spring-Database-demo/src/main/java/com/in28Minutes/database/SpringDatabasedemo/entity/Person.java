@@ -1,12 +1,15 @@
 package com.in28Minutes.database.SpringDatabasedemo.entity;
+
 import java.util.Date;
 
 public class Person {
+
+	private static final double PI = 3.14;
 	private int id;
 	private String name;
 	private String location;
 	private Date birthDate;
-	
+
 	public Person() {
 		super();
 	}
@@ -57,7 +60,4 @@ public class Person {
 	}
 
 
-	
-	
-	
 }

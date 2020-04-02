@@ -16,7 +16,11 @@ public class Student {
 		this.name = name;
 	}
 
-	public Student(String name, int[] marks) {
+	// varaible length of arguments int... marks
+	// uses array internally to pass values from method
+	// restriction is this var argument should be last parameter to work
+
+	public Student(String name, int... marks) {
 		this.name = name;
 		this.marks = marks;
 	}

@@ -1,8 +1,8 @@
-package com.learning;
+package com.learning.arrays;
 
 import java.util.Arrays;
 
-//varaible length of arguments
+//varaible length of arguments int... values
 // uses array internally to pass values from method
 // restriction is this var argument should be last parameter to work
 public class VariableArguments {

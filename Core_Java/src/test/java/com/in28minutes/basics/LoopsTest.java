@@ -2,7 +2,7 @@ package com.in28minutes.basics;
 
 import org.junit.Test;
 
-import com.learning.basics.Loops;
+import com.learning.basics.basics.Loops;
 
 public class LoopsTest {
 

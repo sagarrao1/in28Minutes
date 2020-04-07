@@ -3,7 +3,7 @@ package com.in28Minutes.functionalprogramming;
 import java.util.Arrays;
 import java.util.List;
 
-public class NumbersRunner2 {
+public class FPNumbersRunner2 {
 
 	// there can be any no.of intermediate stream, but only one terminal stream
 	public static void main(String[] args) {

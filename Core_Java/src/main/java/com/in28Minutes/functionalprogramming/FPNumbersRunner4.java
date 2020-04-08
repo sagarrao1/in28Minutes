@@ -18,7 +18,7 @@ public class FPNumbersRunner4 {
 
 		//print odd number
 		list2.stream().filter(e -> e%2 !=0).forEach(e -> System.out.print(e+" "));
-		System.out.println("min :"+min);
+		System.out.println();
 		
 		//get odd numbers and create another list
 		List<Integer> list3 = list2.stream().filter(e -> e%2 !=0).collect(Collectors.toList());

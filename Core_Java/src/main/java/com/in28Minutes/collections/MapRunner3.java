@@ -12,8 +12,10 @@ public class MapRunner3 {
 //		To count how many time char is present in above string
 		Map<Character, Integer> occurances = new HashMap<>();
 		char[] characters = str.toCharArray();
+		System.out.println(characters);
 		for (char character : characters) {
 			Integer integer = occurances.get(character);
+			// better to use Integer instead of int because if we use int , we can't compare it will null.
 			if (integer == null) {
 				occurances.put(character, 1);
 			} else {

@@ -2,7 +2,6 @@ package com.in28minutes.spring.basics.springin5steps;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -10,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import com.in28minutes.spring.basics.springin5steps.scope.PersonDAO;
 
 @Configuration
-@ComponentScan("com.in28minutes.spring.basics.springin5steps")
+@ComponentScan("com.in28minutes.spring.basics.springin5steps.scope")
 public class SpringIn5StepsScopeApplication {
 	
 	private static Logger LOGGER=LoggerFactory.getLogger(SpringIn5StepsScopeApplication.class);

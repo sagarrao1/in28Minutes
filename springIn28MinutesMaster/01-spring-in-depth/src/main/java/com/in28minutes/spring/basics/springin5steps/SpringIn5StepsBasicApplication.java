@@ -2,7 +2,6 @@ package com.in28minutes.spring.basics.springin5steps;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -29,12 +28,12 @@ public class SpringIn5StepsBasicApplication {
 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringIn5StepsBasicApplication.class)) {				
 						
 		BinarySearchImpl binarySearchImpl = applicationContext.getBean(BinarySearchImpl.class);	
-//		BinarySearchImpl binarySearchImpl1 = applicationContext.getBean(BinarySearchImpl.class);	
-//		System.out.println("bean 1: "+binarySearchImpl);
-//		System.out.println("bean 2: "+binarySearchImpl1);
+		BinarySearchImpl binarySearchImpl1 = applicationContext.getBean(BinarySearchImpl.class);	
+		System.out.println("bean 1: "+binarySearchImpl);
+		System.out.println("bean 2: "+binarySearchImpl1);
 		
 		int result = binarySearchImpl.binarySearch(nums, 3);
-		
+//		
 //		com.in28minutes.spring.basics.springin5steps.BubbleSortAlgorithm@15db9742
 //		System.out.println("Result: "+result);
 		

@@ -4,7 +4,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("bubble")
+//@Primary  // 1st way
+@Qualifier("bubble")  // 2nd way
 public class BubbleSortAlgorithm implements SortAlgorithm{
 	public int[] sort(int[] numbers) {
 		// this will sort array of numbers

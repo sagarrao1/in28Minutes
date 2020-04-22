@@ -23,8 +23,10 @@ public class SpringIn5StepsXmlApplication {
 		LOGGER.info("beans loaded -> {}", (Object) applicationContext.getBeanDefinitionNames());
 		LOGGER.info("beans count -> {}", applicationContext.getBeanDefinitionCount());
 		
+//		Old way
+//		XmlPersonDAO xmlPersonDAO = (XmlPersonDAO) applicationContext.getBean("XmlPersonDAO"); 		
 		
-		XmlPersonDAO xmlPersonDAO = applicationContext.getBean(XmlPersonDAO.class);		
+		XmlPersonDAO xmlPersonDAO = (XmlPersonDAO) applicationContext.getBean(XmlPersonDAO.class);
 		LOGGER.info("info {}", xmlPersonDAO );
 		LOGGER.info("info 2{}", xmlPersonDAO.getXmlJdbcConnection());
 		

@@ -13,16 +13,17 @@ public class SpringIn5StepsXmlApplication {
 
 	public static void main(String[] args) {
 		
-		try(ClassPathXmlApplicationContext applicationContext = 
-				new ClassPathXmlApplicationContext("appplicationContext.xml")){
-		
 //		AnnotationConfigApplicationContext applicationContext =				
-//				new AnnotationConfigApplicationContext(SpringIn5StepsXmlApplication.class);
+//		new AnnotationConfigApplicationContext(SpringIn5StepsXmlApplication.class);
 
-			
-			LOGGER.info("Beans loaded -> {}", (Object) applicationContext.getBeanDefinitionNames());
-			LOGGER.info("beans count -> {}",applicationContext.getBeanDefinitionCount());
-			
+	
+		try(ClassPathXmlApplicationContext applicationContext = 
+				new ClassPathXmlApplicationContext("applicationContext.xml")) {
+		
+		LOGGER.info("beans loaded -> {}", (Object) applicationContext.getBeanDefinitionNames());
+		LOGGER.info("beans count -> {}", applicationContext.getBeanDefinitionCount());
+		
+		
 		XmlPersonDAO xmlPersonDAO = applicationContext.getBean(XmlPersonDAO.class);		
 		LOGGER.info("info {}", xmlPersonDAO );
 		LOGGER.info("info 2{}", xmlPersonDAO.getXmlJdbcConnection());
@@ -30,8 +31,9 @@ public class SpringIn5StepsXmlApplication {
 		ExternalXmlService externalXmlService = applicationContext.getBean(ExternalXmlService.class);	
 		LOGGER.info("info 3 {}", externalXmlService );
 		LOGGER.info("info 4 {}", externalXmlService.getUrl() );
+		
+//		applicationContext.close(); don't need as we are using new java 8 version of try() method
 		}
 	}
-
 	
 }

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 import com.in28minutes.spring.basics.springin5steps.basic.BinarySearchImpl;
 
-//@SpringBootApplication
+//@SpringBootApplication   // in order to use it, in pom.xml uncomment boot dependencies  
 @Configuration
 @ComponentScan("com.in28minutes.spring.basics.springin5steps.basic")
 public class SpringIn5StepsBasicApplication {

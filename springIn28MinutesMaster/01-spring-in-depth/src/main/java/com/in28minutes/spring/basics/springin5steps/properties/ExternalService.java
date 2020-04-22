@@ -5,11 +5,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ExternalService {
-	
+
+//	we will read value from property file for this url
 	@Value("${exertnal.value.service}")
 	String url;
 
-	public String getServiceValue() {
+	public String getUrl() {
 		return url;
 	}
+	
+	
+	
 }

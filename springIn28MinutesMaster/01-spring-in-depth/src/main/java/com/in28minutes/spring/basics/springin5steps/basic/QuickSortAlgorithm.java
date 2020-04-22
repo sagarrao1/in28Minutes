@@ -1,9 +1,9 @@
 package com.in28minutes.spring.basics.springin5steps.basic;
 
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 @Qualifier("quick") 
 // will not work via constructor injection only works with setter injection 
 public class QuickSortAlgorithm implements SortAlgorithm{

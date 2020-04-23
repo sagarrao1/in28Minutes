@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class BinarySearchImplTest {
+public class BinarySearchImplStubTest {
 
 	@Test
 	public void binarySearchGivenNum() {

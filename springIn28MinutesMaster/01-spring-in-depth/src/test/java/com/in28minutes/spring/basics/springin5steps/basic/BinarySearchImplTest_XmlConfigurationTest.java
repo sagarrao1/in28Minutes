@@ -8,9 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.spring.basics.springin5steps.SpringIn5StepsBasicApplication;
-
 @RunWith(SpringRunner.class)
+//@ContextConfiguration(locations = "/applicationContext.xml")
 @ContextConfiguration(locations = "/testContext.xml")
 public class BinarySearchImplTest_XmlConfigurationTest {
 	@Autowired

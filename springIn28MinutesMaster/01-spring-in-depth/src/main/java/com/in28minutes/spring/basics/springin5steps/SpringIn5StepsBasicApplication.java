@@ -10,7 +10,7 @@ import com.in28minutes.spring.basics.springin5steps.basic.BinarySearchImpl;
 
 //@SpringBootApplication   // in order to use it, in pom.xml uncomment boot dependencies  
 @Configuration
-@ComponentScan("com.in28minutes.spring.basics.springin5steps.basic")
+@ComponentScan("com.in28minutes.spring.basics.springin5steps")
 public class SpringIn5StepsBasicApplication {
 		
 	private static Logger LOGGER =  LoggerFactory.getLogger(SpringIn5StepsBasicApplication.class);

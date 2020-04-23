@@ -4,5 +4,8 @@ import javax.inject.Named;
 
 @Named
 public class SomeCdiDAO {
-
+	
+	public int[] getNumbers() {
+		return new int[] {1,2,94};
+	}
 }

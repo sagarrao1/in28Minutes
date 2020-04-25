@@ -12,7 +12,7 @@ public class BooksController {
 	@GetMapping("/books")
 	public List<Book> getAllBooks() {
 		return Arrays.asList(
-				new Book(1001, "Mastering Spring 5.2", "Sagar rao"),
+				new Book(1001, "Mastering Spring 5.6", "Sagar rao"),
 				new Book(1002, "Mastering Chef", "Sanju Kokkirala"));
 	}
 }

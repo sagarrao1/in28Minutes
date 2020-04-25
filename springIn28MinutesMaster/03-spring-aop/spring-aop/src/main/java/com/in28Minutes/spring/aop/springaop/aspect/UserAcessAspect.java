@@ -18,6 +18,7 @@ public class UserAcessAspect {
 	
 //	What kind of method calls you want to intercept?
 //	execution(* PACKAGE.*.*(..))
+//	 * all return types, * -> all classes in that package *-> all methods of all clasess (..) -> irrespective arguments
 //	Point cut
 //	@Before("execution(* com.in28Minutes.spring.aop.springaop..*.*(..))")
 	@Before("execution(* com.in28Minutes.spring.aop.springaop.dummy.*.*(..))")

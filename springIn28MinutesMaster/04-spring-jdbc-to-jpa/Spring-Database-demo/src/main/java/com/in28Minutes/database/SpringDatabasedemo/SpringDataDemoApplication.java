@@ -7,12 +7,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.in28Minutes.database.SpringDatabasedemo.entity.Person2;
 import com.in28Minutes.database.SpringDatabasedemo.springdata.PersonSpringDataRepository;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class SpringDataDemoApplication implements CommandLineRunner{
 
 	private Logger logger= LoggerFactory.getLogger(this.getClass());

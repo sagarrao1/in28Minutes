@@ -1,22 +1,17 @@
 package com.in28Minutes.database.SpringDatabasedemo.jpa;
 import java.util.List;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
-import javax.transaction.Transactional;
-
-import org.springframework.stereotype.Repository;
 
 import com.in28Minutes.database.SpringDatabasedemo.entity.Person2;
 
-@Repository
-@Transactional
+//@Repository
+//@Transactional
 public class PersonJPARepository {
 
 //	connect to database
-	@PersistenceContext
-	EntityManager entityManager;
+//	@PersistenceContext
+//	EntityManager entityManager;
 	
 
 	public List<Person2> find_All() {

@@ -1,17 +1,26 @@
 package com.in28Minutes.database.SpringDatabasedemo.entity;
 import java.util.Date;
 
-//@Repository
-//@Entity
-//@NamedQuery(name="find_All_persons", query="select p from Person2 p")
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.NamedQuery;
+
+@Entity
+@NamedQuery(name="find_All_persons", query="select p from Person2 p")
 public class Person2 {
-//	@Id
-//	@GeneratedValue
+	@Id
+	@GeneratedValue
 	private int id;
 	private String name;
 	private String location;
 	private Date birthDate;
 	
+	/*
+	 * We need to have no arg constructor , all arg constructor, all without id
+	 * constructor because we made id as auto generated column, so need not to
+	 * define
+	 */	
 	public Person2() {
 		super();
 	}

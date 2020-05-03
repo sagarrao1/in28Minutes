@@ -7,6 +7,6 @@
 <title>This is Welcome JSP Title</title>
 </head>
 <body>
-	<font size="18">Welcome ${name}</font>	
+	<font size="18">Welcome ${name} and password is ${password}</font>	
 </body>
 </html>

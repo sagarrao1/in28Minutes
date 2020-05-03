@@ -10,8 +10,8 @@
 	<%-- My First JSP page..... ${name} and password is ${password} --%>
 	
 	<p> <font color="red"> ${ErrorMsg} </font>  </p>
-	<form action="/login.do" method="post">
-		Enter your name:  <input type="text" name="name"> </br>
+	<form action="/spring-mvc/login" method="post">
+		Enter your name:  <input type="text" name="name" > 
 		Enter your password:  <input type="password" name="password">
 		<input type="submit" value="Submit">
 	</form>

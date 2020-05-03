@@ -4,6 +4,9 @@
   <artifactId>fisrt-web-app2</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  
+  <name>fisrt-web-app2</name>
+  <description>first web app using spring MVC</description>
 
 	<dependencies>
 		<dependency>

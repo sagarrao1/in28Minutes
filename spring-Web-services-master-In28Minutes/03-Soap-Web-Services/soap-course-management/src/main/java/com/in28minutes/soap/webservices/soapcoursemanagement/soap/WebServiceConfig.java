@@ -1,6 +1,5 @@
 package com.in28minutes.soap.webservices.soapcoursemanagement.soap;
 import java.util.Collections;
-import java.util.List;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
@@ -8,8 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.ws.config.annotation.EnableWs;
-import org.springframework.ws.config.annotation.WsConfigurerAdapter;
-import org.springframework.ws.server.EndpointInterceptor;
 import org.springframework.ws.soap.security.xwss.XwsSecurityInterceptor;
 import org.springframework.ws.soap.security.xwss.callback.SimplePasswordValidationCallbackHandler;
 import org.springframework.ws.transport.http.MessageDispatcherServlet;
@@ -22,7 +19,8 @@ import org.springframework.xml.xsd.XsdSchema;
 @EnableWs
 //Spring configuration
 @Configuration
-public class WebServiceConfig extends WsConfigurerAdapter{
+public class WebServiceConfig /* extends WsConfigurerAdapter */{
+	 // extend above class to implement security in web service like validating user and password
 	// MessageDispatcherServelet
 	//Application Context
 	// url -> /ws/*
@@ -83,10 +81,10 @@ public class WebServiceConfig extends WsConfigurerAdapter{
 		return handler;
 	}
 
-	@Override
-	public void addInterceptors(List<EndpointInterceptor> interceptors) {		 
-		interceptors.add(securityInterceptor());
-	}
+//	@Override
+//	public void addInterceptors(List<EndpointInterceptor> interceptors) {		 
+//		interceptors.add(securityInterceptor());
+//	}
 
 	
 	

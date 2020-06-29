@@ -5,6 +5,18 @@ Spring Web Services - http://projects.spring.io/spring-ws/
 
 we haved JAXB2 Maven Plugin  in pom.xml for xml binding which will convert xml to java  object and vice versa
 
+open soap-course-management project in eclipse
+run SoapCourseManagementApplication to start the web service provider
+
+go to client project folder, run wsimport command
+
+=== soap course client consumer====
+
+import wsdl
+wsimport -keep -verbose -s ./src/ -d ./bin/ http://localhost:8080/ws/courses.wsdl
+
+
+
 
 
 to implement security

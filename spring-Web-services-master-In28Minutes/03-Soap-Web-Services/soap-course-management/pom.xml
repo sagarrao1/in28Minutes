@@ -99,7 +99,7 @@
 				<configuration>
 					<schemaDirectory>${project.basedir}/src/main/resources</schemaDirectory>
 					<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
-					<clearOutputDir>false</clearOutputDir>
+					<clearOutputDir>false</clearOutputDir> <!-- otherwise it will remove existing other java code from src -->
 				</configuration>
 			</plugin>
 			<!-- JAXB2 Maven Plugin -->

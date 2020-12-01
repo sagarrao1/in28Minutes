@@ -1,0 +1,48 @@
+
+
+28minutes github url for maven course
+
+https://github.com/in28minutes/JavaWebApplicationStepByStep
+
+
+to run the project :
+
+you need to right click on prject > run as > Maven build... > Goal as tomcat7:run
+
+
+login page for this course
+http://localhost:8080/login.do
+
+user: in28Minutes password: dummy
+
+
+
+
+Verify whether user logged in or not in every page
+
+1. what logic we need to implement to identify user logged in or not ?
+
+	best way is to add user name in session and see if name is not not null means user is logged in
+
+2. where to implement this logic to verify in every servlet ?
+
+	there is convcept called Filter in servlet which intercepts  every servlet request and and whether user logged in or
+	no need to add logic in every servlet page
+	
+	we need to implement for all *.do servlets
+	
+	
+	Filter
+	LoginRequiredFilter
+	*.do
+	
+	
+	if there is a name in the session
+		we will allow the request to go throgh as usal
+	 else
+	   we redirect to login page
+	   
+	   
+	   
+	
+

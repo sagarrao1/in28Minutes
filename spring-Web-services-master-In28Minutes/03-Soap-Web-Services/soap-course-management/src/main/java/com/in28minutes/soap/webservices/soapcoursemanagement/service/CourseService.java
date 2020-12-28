@@ -52,7 +52,7 @@ public class CourseService {
 	  static {		
 		Course course1= new Course(1,"Python","learn python in 30 days");		
 		courseList.add(course1);		
-		Course course2= new Course(2,"Mongo DB","learn mongo DB ");
+		Course course2= new Course(2,"Mongo DB","learn mongo DB New");
 		courseList.add(course2);
 		Course course3= new Course(3,"Java REST service","learn REST which is useful for  in 30 days");
 		courseList.add(course3);

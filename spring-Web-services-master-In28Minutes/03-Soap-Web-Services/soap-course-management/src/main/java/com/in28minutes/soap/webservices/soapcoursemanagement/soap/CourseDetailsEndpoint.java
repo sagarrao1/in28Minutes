@@ -15,6 +15,7 @@ import com.in28minutes.courses.GetAllCourseDetailsRequest;
 import com.in28minutes.courses.GetAllCourseDetailsResponse;
 import com.in28minutes.courses.GetCourseDetailsRequest;
 import com.in28minutes.courses.GetCourseDetailsResponse;
+import com.in28minutes.courses.XmlStatus;
 import com.in28minutes.soap.webservices.soapcoursemanagement.bean.Course;
 import com.in28minutes.soap.webservices.soapcoursemanagement.service.CourseService;
 import com.in28minutes.soap.webservices.soapcoursemanagement.service.CourseService.Status;
@@ -49,7 +50,17 @@ public class CourseDetailsEndpoint {
 //	  courseDetails.setName("Micro services");
 //	  courseDetails.setDescription("learn micro services as it is future");	  
 
+//	  CourseDetails courseDetails= new CourseDetails();	  
+//	  courseDetails.setId(course.getId());
+//	  courseDetails.setName(course.getName());
+//	  courseDetails.setDescription(course.getDescription());
+//	  
+//	  GetCourseDetailsResponse response = new GetCourseDetailsResponse();
+//	  response.setCourseDetails(courseDetails);
+//	  return response;
+	  
 		return mapCourseDetails(course);
+	  
 	}
 
   @PayloadRoot(namespace = "http://in28minutes.com/courses" , localPart = "GetAllCourseDetailsRequest")
@@ -96,10 +107,10 @@ public class CourseDetailsEndpoint {
 	  return response;
 	}
   
-private com.in28minutes.courses.XmlStatus mapStatus(Status status) {
+private XmlStatus mapStatus(Status status) {
 	if(status == Status.FAILURE)
-		return com.in28minutes.courses.XmlStatus.FAILURE;
-	return com.in28minutes.courses.XmlStatus.SUCCESS;
+		return XmlStatus.FAILURE;
+	return XmlStatus.SUCCESS;
 }
 
 

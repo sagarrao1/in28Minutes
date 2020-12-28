@@ -10,45 +10,42 @@ import com.in28minutes.rest.ws.domain.User;
 
 @Component
 public class UserDaoService {
-	
-	public static int userCount=3;
-	
+
+	public static int userCount = 3;
+
 	// create static users till we learn jpa
-	public static List<User> users= new ArrayList<>();
-	
+	public static List<User> users = new ArrayList<>();
+
 	static {
-		users.add(new User(1,"Sagar", new Date()));
-		users.add(new User(1,"Ravi", new Date()));
-		users.add(new User(1,"Murali", new Date()));		
+		users.add(new User(1, "Sagar", new Date()));
+		users.add(new User(1, "Ravi", new Date()));
+		users.add(new User(1, "Murali", new Date()));
 	}
 
-	
 	// methods that we want to create are
 	// findALL()
-	//findById(Integer id)
-	//createUser(User user)
-	
-	public List<User> findAll(){
+	// findById(Integer id)
+	// createUser(User user)
+
+	public List<User> findAll() {
 		return users;
 	}
-	
+
 	public User findById(Integer id) {
 		for (User user : users) {
-			if (user.getId()==id)
+			if (user.getId() == id)
 				return user;
 		}
 		return null;
 	}
-	
-	
-	public void save(User user) {
-		if (user.getId()== null)
+
+	public User save(User user) {
+		if (user.getId() == null) {
 			user.setId(++userCount);
-		
+		}
+
 		users.add(user);
+		return user;
 	}
-	
-	
+
 }
-
-

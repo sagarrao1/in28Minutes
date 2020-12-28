@@ -14,7 +14,7 @@ public class HelloWorldController{
 	// URI - /hello-world
 	//method returns "Hello World!!"
 	//return simple string back	
-	@GetMapping(path = "/hello-world")
+	@GetMapping(path = {"/","/hello-world"})
 	public String helloWorld() {
 		return "Hello World!! !";
 	}
@@ -26,9 +26,9 @@ public class HelloWorldController{
 	}
 
 //	take value from pathVariable bean back
-	@GetMapping(path = "/hello-world/path-variable/{name}")
-	public HelloWorldBean helloWorldpathVariable(@PathVariable String name) {
-		return new HelloWorldBean(String.format("Hello World path variable :%s  ",name));
+	@GetMapping(path = "hello-world/{name}")
+	public HelloWorldBean hellowWorldBeanDisplay(@PathVariable("name")  String name) {		
+		return new HelloWorldBean(name);
 	}
 
 	

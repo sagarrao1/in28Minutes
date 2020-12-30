@@ -2,10 +2,23 @@ package com.in28minutes.rest.ws.domain;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
+
+@Entity
 public class User {
 
+	@Id
+	@GeneratedValue
 	private Integer id;
+	
+	@Size(min = 2,message = "name should be min 2 chars")
 	private String name;
+	
+	@Past(message = "Date should be in past , not in future")
 	private Date birthDate;
 
 	public Integer getId() {
@@ -43,5 +56,11 @@ public class User {
 	public String toString() {
 		return String.format("User [id=%s, name=%s, birthDate=%s]", id, name, birthDate);
 	}
+
+	public User() {
+		super();
+	}
+	
+	
 
 }

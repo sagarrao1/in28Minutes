@@ -2,6 +2,7 @@ package com.in28minutes.rest.ws.dataaccess;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
@@ -18,8 +19,8 @@ public class UserDaoService {
 
 	static {
 		users.add(new User(1, "Sagar", new Date()));
-		users.add(new User(1, "Ravi", new Date()));
-		users.add(new User(1, "Murali", new Date()));
+		users.add(new User(2, "Ravi", new Date()));
+		users.add(new User(3, "Murali", new Date()));
 	}
 
 	// methods that we want to create are
@@ -31,7 +32,7 @@ public class UserDaoService {
 		return users;
 	}
 
-	public User findById(Integer id) {
+	public User findById(int id) {
 		for (User user : users) {
 			if (user.getId() == id)
 				return user;
@@ -40,12 +41,29 @@ public class UserDaoService {
 	}
 
 	public User save(User user) {
+		
+		if (user.getName() == null)
+				return null;
+		
 		if (user.getId() == null) {
 			user.setId(++userCount);
 		}
 
 		users.add(user);
 		return user;
+	}
+	
+	
+	public User deleteById(int id) {		
+		Iterator<User> iterator = users.iterator();
+		while (iterator.hasNext()) {
+			User usr= iterator.next();
+			if (usr.getId() == id) {
+				iterator.remove();
+				return usr;
+			}			
+		}			
+		return null;
 	}
 
 }

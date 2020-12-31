@@ -1,0 +1,126 @@
+
+
+
+
+==================================
+swagger info:
+for swagger we need to add below 2 jars
+
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger2</artifactId>
+		    <version>2.4.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger-ui</artifactId>
+		    <version>2.4.0</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter 
+		 It will work with only spring boot >= 2.2-->
+<!-- 		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-boot-starter</artifactId>
+		    <version>3.0.0</version>
+		</dependency>
+ -->
+ 
+ To enable actuator in non prod, we need add below property in application.properties file
+ we should not enable it in prod as it has performace impact
+ 
+ manager
+
+http://localhost:8080/v2/api-docs
+
+http://localhost:8080/swagger-ui.html
+
+
+
+=============================
+actuator :
+
+we  need to setup below 2 jars for actuator
+ <!-- Actuatior prodvides monitering and it requires hal browser to see-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-rest-hal-browser</artifactId>
+		</dependency>
+
+
+urls:
+http://localhost:8080/actuator
+
+http://localhost:8080/application
+
+type http://localhost:8080/ in browser, it will open in hal browser as we have configured it
+
+
+==============================
+
+filtering :  let's you have 3 ffields in your bean , but you want to send only 2 fields in response when you are sending in json
+ like filtering passwords that you don't want to send out
+ you use filter to ignore that field in you bean using @JsonIgnore annotations
+ static filtering
+
+dynamic filtering : in static filtering you need to use @JsonIgnore annotation in each field and also like if you want filer on field 
+in one method and another field in another menthod , you need to use dynamic filter
+
+you will filter at your controller not at your bean level
+
+
+========================================================
+Versioning
+
+Different types of versioning
+look PersonVersionController class
+
+1. Versioning using URI's
+	Twitter uses
+	
+2. Versioning using rquest parameter
+	Amazon uses
+
+3.Versioning using headers 
+  	Microsoft
+
+4. Versioning using produces mime type versioning
+	Mediatype versioning (accept header or a.k.a content negotiation)
+	GitHub uses
+	
+
+==============================
+
+Security
+we need to add spring boot security jar in pom.xml
+
+it will make all requests secure meaning asks for password
+pass will be written to console
+we need to select authorization in request header and provide user and password before submitting request
+if you want to use your own user and password, we need to set it in application.properties
+it is a very basic authentication
+
+
+=======================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -24,7 +24,7 @@ public class HelloWorldController{
 	// URI - /hello-world
 	//method returns "Hello World!!"
 	//return simple string back	
-	@GetMapping(path = {"/","/hello-world"})
+	@GetMapping(path = {"/hello-world"})
 	public String helloWorld() {
 		return "Hello World!! !";
 	}

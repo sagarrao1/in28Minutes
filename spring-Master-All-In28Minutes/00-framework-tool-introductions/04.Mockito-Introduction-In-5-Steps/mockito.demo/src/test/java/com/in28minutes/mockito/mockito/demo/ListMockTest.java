@@ -4,13 +4,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import org.assertj.core.util.Arrays;
 import org.junit.Test;
 import org.mockito.Mockito;
 
 public class ListMockTest {
-
+	
 	@Test
 	public void testListSize() {
 		List listMock = mock(List.class);

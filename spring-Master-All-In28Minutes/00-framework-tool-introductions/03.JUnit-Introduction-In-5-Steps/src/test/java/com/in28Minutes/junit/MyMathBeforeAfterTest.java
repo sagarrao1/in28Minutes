@@ -22,8 +22,8 @@ public class MyMathBeforeAfterTest {
 	}
 
 	@After
-	public void teardown() {
-		System.out.println("After");
+	public void teardown1() {
+		System.out.println("After 1");
 	}
 
 	@BeforeClass
@@ -36,16 +36,18 @@ public class MyMathBeforeAfterTest {
 		System.out.println("After Class");
 	}
 	
-	@Test
-	public void sum_With3Numbers() {
+	@Test()	
+	public void sum_With3Numbers() throws InterruptedException {
 		System.out.println("test 1");
 //		int[] numbers = new int[3];		
 //		int[] numbers = {1,2,3};		
-		assertEquals(6, myMath.sum(new int[] {1,2,3}));			
+		assertEquals(6, myMath.sum(new int[] {1,2,3}));		
+		
 	}
 
 	@Test
-	public void sum_With1Numbers() {
+	
+	public void sum_With1Numbers() throws InterruptedException {
 		System.out.println("test 2");
 //		MyMath myMath = new MyMath();		
 //		int[] numbers = new int[3];		

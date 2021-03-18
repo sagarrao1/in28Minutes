@@ -7,7 +7,7 @@ public class MyMathTest {
 	MyMath myMath = new MyMath();		
 
 	@Test
-	public void sum_With3Numbers() {
+	public void sum_With3Numbers() throws InterruptedException {
 //		int[] numbers = new int[3];		
 //		int[] numbers = {1,2,3};		
 		assertEquals(6, myMath.sum(new int[] {1,2,3}));	
@@ -18,7 +18,12 @@ public class MyMathTest {
 //		MyMath myMath = new MyMath();		
 //		int[] numbers = new int[3];		
 //		int[] numbers = {1,2,3};		
-		assertEquals(13, myMath.sum(new int[] {13}));	
+		try {
+			assertEquals(13, myMath.sum(new int[] {13}));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
 	}
 
 }

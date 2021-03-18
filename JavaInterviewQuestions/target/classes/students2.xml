@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+   <student>
+      <firstname>Sagar</firstname>
+      <lastname>rao</lastname>
+      <email>sagarrao1@gmail.com</email>
+      <marks>99</marks>
+   </student>
+   <student>
+      <firstname>Sanju</firstname>
+      <lastname>K</lastname>
+      <email>KsandyaRani@gmail.com</email>
+      <marks>88</marks>
+   </student>
+</students>

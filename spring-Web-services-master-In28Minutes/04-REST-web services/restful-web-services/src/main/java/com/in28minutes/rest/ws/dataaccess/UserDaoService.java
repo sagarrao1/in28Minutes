@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.in28minutes.rest.ws.domain.User;
@@ -12,6 +14,9 @@ import com.in28minutes.rest.ws.domain.User;
 @Component
 public class UserDaoService {
 
+// 1. Below User data is populated using static way
+	
+	
 	public static int userCount = 3;
 
 	// create static users till we learn jpa
@@ -66,4 +71,11 @@ public class UserDaoService {
 		return null;
 	}
 
+
+//2. Using JPA repository and making H2 in memory database and Storing data in 
+//User table. check UserJPAResource class
+
+	
+	
+	
 }

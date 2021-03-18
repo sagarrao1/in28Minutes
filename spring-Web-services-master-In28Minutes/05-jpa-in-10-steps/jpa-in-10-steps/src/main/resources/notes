@@ -1,0 +1,45 @@
+
+if you want to execute anything while spring context is loaded , you need to use commandline runner
+if you want create user while spring context is loaded, you create command line runner
+
+
+h2 is in-memory database
+to show User sql details in console, add below to application.properties
+spring.jpa.show-sql=true
+spring.h2.console.enabled=true
+
+
+h2 database url :
+http://localhost:8080/h2-console
+
+from sprint boot >2.2 jdbc url's are changin everytime you restart app
+it will be printed in console like jdbc:h2:mem:afc231c1-39cb-44e8-a55d-3a12a8f16d42
+cop and paste it in browser h2 console screen
+
+if you want consistant jdbc url, you need to add below to application.properties
+#to make database and URL constant by adding this
+#spring.datasource.url=jdbc:h2:mem:testdb
+#spring.data.jpa.repositories.bootstrap-mode=default
+
+
+
+========
+Spring JPA
+
+in order use database entity you need to create UserDAOService and user entitymanager
+and persist User. it is kind of duplicate if you have multiple objects that you want to store in DB
+
+spring JPA provides implementation to these as well
+you just need to create interface and extend it with JPaRepository. it will take of 
+storing them , retriving them
+
+
+create interface zbc extends jpaRepositoy <User, long>
+you need to provide Objecr that you want to create table and primary key for that table
+here User and long id primary key
+
+
+
+
+
+

@@ -12,12 +12,12 @@ public class SpringbootIn10StepsApplication {
 		
 		String[] beanDefinitionNames = applicationContext.getBeanDefinitionNames();
 		
-		System.out.println("Printing beanDefinitionNames ============");
+		System.out.println("Printing beanDefinitionNames ==================================");
 		for (String string : beanDefinitionNames) {
 			System.out.println(string);
 		}
 
-		System.out.println("ending  beanDefinitionNames ============");
+		System.out.println("ending  beanDefinitionNames ===================================");
 			
 	}
 

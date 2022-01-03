@@ -1,6 +1,6 @@
 package com.JimWilson.threads.concurrency;
 
-public class BankAccount {
+public class BankAccount implements Runnable{
 	
 	private int balance;
 
@@ -20,6 +20,12 @@ public class BankAccount {
 	public synchronized void withdrawl(int amt) {
 		this.balance -=amt;
 		System.out.println(amt +" deducted : " +balance);
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

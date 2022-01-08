@@ -1,0 +1,128 @@
+package com.JimWilson2.inheritence;
+
+import java.util.Objects;
+
+public class Flight {
+    int passengers;
+    int seats = 150;
+
+    private int totalCheckedBags;
+
+    private int flightNumber;
+    private char flightClass;
+
+    public Flight() {  }
+
+    public Flight(int flightNumber) {
+        this.flightNumber = flightNumber;
+
+    }
+
+    public Flight(char flightClass) {
+        this.flightClass = flightClass;
+    }
+
+    public void add1Passenger() {
+        System.out.println("executing add1Passenger()");
+
+        if(hasSeating())
+            passengers += 1;
+    }
+
+    public void add1Passenger(int bags) {
+        System.out.println("executing add1Passenger(int bags)");
+
+        if (hasSeating()) {
+            add1Passenger();
+            totalCheckedBags += bags;
+        }
+    }
+
+    public void add1Passenger(Passenger p) {
+        System.out.println("executing add1Passenger(Passenger p)");
+
+        add1Passenger(p.getCheckedBags());
+    }
+
+    public void add1Passenger(int bags, int carryOns) {
+        System.out.println("executing add1Passenger(int bags, int carryOns)");
+
+        if(carryOns <= 2)
+            add1Passenger(bags);
+    }
+
+    public void add1Passenger(Passenger p, int carryOns) {
+        System.out.println("executing add1Passenger(Passenger p, int carryOns)");
+
+        add1Passenger(p.getCheckedBags(), carryOns);
+    }
+
+    public void addPassengers(Passenger... list) {
+        System.out.println("executing addPassengers(Passenger... list)");
+        if (hasSeating(list.length)) {
+            passengers += list.length;
+            for (Passenger passenger : list) {
+                System.out.println("Adding " + passenger.getCheckedBags() + " checked bags");
+                totalCheckedBags += passenger.getCheckedBags();
+            }
+        }
+    }
+
+    private boolean hasSeating() {
+        System.out.println("executing hasSeating() - seats: " + seats);
+         return passengers < seats;
+    }
+
+    private boolean hasSeating(int count) {
+        return passengers + count <= seats;
+    }
+
+    public int getFlightNumber() {
+        return flightNumber;
+    }
+
+    public void setFlightNumber(int flightNumber) {
+        this.flightNumber = flightNumber;
+    }
+
+    public int getTotalCheckedBags() {
+        return totalCheckedBags;
+    }
+
+//	@Override
+//	public int hashCode() {
+//		final int prime = 31;
+//		int result = 1;
+//		result = prime * result + flightClass;
+//		result = prime * result + flightNumber;
+//		return result;
+//	}
+//
+//	@Override
+//	public boolean equals(Object obj) {
+//		if (this == obj)
+//			return true;
+//		if (obj == null)
+//			return false;
+//		if (getClass() != obj.getClass())
+//			return false;
+//		Flight other = (Flight) obj;
+//		if (flightClass != other.flightClass)
+//			return false;
+//		if (flightNumber != other.flightNumber)
+//			return false;
+//		return true;
+//	}
+
+
+    @Override
+    public  boolean equals(Object o) {
+    	if (!(o instanceof Flight))
+			return false;
+
+    	Flight flight =  (Flight) o;    	
+	    	return (flightNumber == flight.flightNumber) &&
+	    			(flightClass == flight.flightClass);
+    }
+    
+}

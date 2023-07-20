@@ -1,0 +1,210 @@
+
+
+ArrayList and LinkedList
+if you want add items to end of llist and remove of end of list you should use arrayList
+if you want add items to middle of the list and remove items from middle of list 
+you should use LinkedList
+Arralist are like arrays anitial size 10 , will increase based data
+[0][1][2][3]..
+
+LinkedList contains reference of previous and next items'
+[0]->[1]<->[2]<-[3]
+
+
+XML
+https://www.youtube.com/watch?v=8RK8FDTdLSc
+
+mysql
+https://stackoverflow.com/questions/55172051/writing-configuration-file-failed-in-mysql-server-8-0-15
+
+
+Naveen reddy java tutorial for beginers
+https://www.youtube.com/playlist?list=PLGwb7xZHg-oMv1pOlTHAqAEjw0EPALzlL
+
+collections in Java
+https://www.youtube.com/watch?v=5NOLuoG6fcQ&list=PLsyeobzWxl7oJj5BXYF088REBm-K4c_SR
+
+MultiThreading
+https://www.youtube.com/watch?v=L95658yXRgI&list=PLsyeobzWxl7rmuFYRpkqLanwoG4pQQ7oW
+
+Design Patterns
+https://www.youtube.com/watch?v=tDxnyop48mY&list=PLsyeobzWxl7r2ZX1fl-7CKnayxHJA_1ol
+
+Servlets all
+https://www.youtube.com/watch?v=7TOmdDJc14s&list=PLsyeobzWxl7pUPF2xjjJiG4BKC9x_GY46
+
+
+All
+17.22
+https://www.youtube.com/watch?v=nvluJ9yf4ho&list=PLGwb7xZHg-oMv1pOlTHAqAEjw0EPALzlL&index=190
+
+
+
+other Java stuff
+maven
+https://www.youtube.com/watch?v=dqJanLvjDqc&list=PLsyeobzWxl7rmyU_pbSatep7uCI3cpBow
+Git
+https://www.youtube.com/watch?v=OdbBmvfThJY&list=PLsyeobzWxl7q2eaUkorLZExfd7qko9sZC
+Junit and mokito
+https://www.youtube.com/watch?v=eILy4p99ac8&list=PLsyeobzWxl7po1i2mSjNg5AnkE21mgjb5
+
+EJB
+https://www.youtube.com/watch?v=jhcoCVWyQDs&list=PLsyeobzWxl7rsZPajEm5GnIWosY1mMxbd
+
+making Jar file
+https://www.youtube.com/watch?v=JeBiZVAPXFM
+
+
+
+
+Spring Core
+https://www.youtube.com/watch?v=JNeAwX_MOcU&list=PLsyeobzWxl7rFkYFysfTwBu1JBPaNNDrk
+
+Spring MVC
+https://www.youtube.com/watch?v=_QtVAZJiWMA&list=PLsyeobzWxl7rjSO6xX00UWmVhL90i-cOk&index=8
+
+
+
+Python
+
+Python 
+
+https://www.youtube.com/watch?v=QXeEoD0pB3E&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3
+23-05-19 
+
+Python Regex  regular express
+
+https://www.youtube.com/watch?v=K8L6KVGG-7o
+
+Python Tutorial: Slicing Lists and Strings
+
+From <https://www.youtube.com/watch?v=ajrtAuDg3yw> 
+
+
+https://www.youtube.com/watch?v=ajrtAuDg3yw
+
+
+
+Python Tutorial: File Objects - Reading and Writing to Files
+
+From <https://www.youtube.com/watch?v=Uh2ebFW8OYM> 
+
+
+Python Pandas
+https://www.youtube.com/watch?v=CmorAWRsCAw&list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy
+
+
+
+
+
+
+mysql below users 
+
+     		String user="root";
+			String pwd="admin";
+			String url="jdbc:mysql://localhost:3306/hibdb";
+			Class.forName("com.mysql.cj.jdbc.Driver");
+root
+admin
+
+sagar
+admin
+
+Github url
+https://github.com/sagarrao1
+
+user name: sagarrao1
+password: Srinath12
+
+
+to unpack from packed git file
+go to folder wher git configured
+ git checkout master
+ 
+ 
+ 
+ and move the contents to a directory named .git. In other words, you should end up with a directory tree that looks like
+
+myproject
+|-- .git
+|   |--objects
+|   |  |-- pack
+|   |  |   |-- pack-cdfae92.idx
+|   |  |   |-- pack-cdfae92.pack
+
+
+
+mongo DB
+https://www.youtube.com/user/hiteshitube/playlists
+
+
+
+Servlets all
+https://www.youtube.com/watch?v=7TOmdDJc14s&list=PLsyeobzWxl7pUPF2xjjJiG4BKC9x_GY46
+
+
+Spring Core
+https://www.youtube.com/watch?v=JNeAwX_MOcU&list=PLsyeobzWxl7rFkYFysfTwBu1JBPaNNDrk
+
+Spring MVC
+https://www.youtube.com/watch?v=_QtVAZJiWMA&list=PLsyeobzWxl7rjSO6xX00UWmVhL90i-cOk&index=8
+
+
+OpenShift Tutorial for Beginners : https://goo.gl/s58BQH 
+https://www.youtube.com/playlist?list=PLsyeobzWxl7rpmHJD_u8s6yVnxNaxzw3W
+
+
+postman tool :
+sagarrao1@gmail.com
+sagarrao1
+Srinath@12
+
+
+Complete these by step by step
+
+web service part 1
+https://www.youtube.com/watch?v=Qw23--Avew4&list=PLsyeobzWxl7oz8yL16PqO1sy9sxdlTuI1
+
+completed till
+--all done
+
+web service part 2
+https://www.youtube.com/playlist?list=PLsyeobzWxl7ps4Z1C4VMtvZEx5-PgyoYI
+
+completed above
+
+hibernate
+https://www.youtube.com/playlist?list=PLsyeobzWxl7qBZtsEvp_n2A7sJs2MpF3r
+
+completed till
+https://www.youtube.com/watch?v=otinfgwkMbY&list=PLsyeobzWxl7qBZtsEvp_n2A7sJs2MpF3r&index=27
+
+
+Spring DEmo java brains
+https://www.youtube.com/watch?v=ZUe1Xz7DAcY&list=PLC97BDEFDCDD169D7&index=23
+
+look for @Autowired --done
+
+completed till here, practice from here
+
+Spring AOP
+https://www.youtube.com/watch?v=yiinKulgm4U&list=PLE37064DE302862F8&index=12
+
+
+Spring data support using Jdbc
+https://www.youtube.com/watch?v=0lqlg5tnDag&list=PL1A506B159E5BD13E&index=10
+
+
+Hibernate 3
+https://www.youtube.com/watch?v=4mANZ4MMbD4&list=PL4AFF701184976B25&index=16
+
+
+Maven
+
+https://www.youtube.com/watch?v=IRKu8_l5YiQ&list=PL92E89440B7BFD0F6&index=5
+
+
+
+
+microsoft key 
+AE4HE-XDTUH-56MT9-H2MVU-DS7AY 

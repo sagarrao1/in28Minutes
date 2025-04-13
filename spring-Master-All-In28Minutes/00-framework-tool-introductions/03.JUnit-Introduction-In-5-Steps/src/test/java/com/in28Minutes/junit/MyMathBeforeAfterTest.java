@@ -1,11 +1,12 @@
 package com.in28Minutes.junit;
-import static org.junit.Assert.assertEquals;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 /*Order of test1 and test2 are not maintained
 Before class and After class are class level methods so it should be static
@@ -16,22 +17,22 @@ public class MyMathBeforeAfterTest {
 	MyMath myMath = new MyMath();		
 	
 	
-	@Before
+	@BeforeEach
 	public void setup() {
 		System.out.println("Before");
 	}
 
-	@After
+	@AfterEach
 	public void teardown1() {
 		System.out.println("After 1");
 	}
 
-	@BeforeClass
+	@BeforeAll
 	public static void BeforeClass() {
 		System.out.println("Before Class");
 	}
 
-	@AfterClass
+	@AfterAll
 	public static void AfterClass() {
 		System.out.println("After Class");
 	}
@@ -41,7 +42,7 @@ public class MyMathBeforeAfterTest {
 		System.out.println("test 1");
 //		int[] numbers = new int[3];		
 //		int[] numbers = {1,2,3};		
-		assertEquals(6, myMath.sum(new int[] {1,2,3}));		
+		assertEquals(6, myMath.calculateSum(new int[] {1,2,3}));		
 		
 	}
 
@@ -52,7 +53,7 @@ public class MyMathBeforeAfterTest {
 //		MyMath myMath = new MyMath();		
 //		int[] numbers = new int[3];		
 //		int[] numbers = {1,2,3};		
-		assertEquals(13, myMath.sum(new int[] {13}));	
+		assertEquals(13, myMath.calculateSum(new int[] {13}));	
 	}
 
 }

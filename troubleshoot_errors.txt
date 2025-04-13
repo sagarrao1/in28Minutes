@@ -1,0 +1,63 @@
+https://github.com/in28minutes/in28minutes-initiatives/blob/master/The-in28Minutes-TroubleshootingGuide-And-FAQ/quick-start.md
+
+
+
+h2 url
+localhost:8080/h2-console/
+
+
+spring framework in 28 minutes
+
+from starting
+Practiced till 34.step 25
+
+git url
+https://github.com/in28minutes/spring-master-class/tree/master/01-spring-in-depth
+
+
+try reading proeperties file from xml config
+https://javapapers.com/spring/spring-properties-with-propertysource-annotation/
+
+Not practiced spring mvc in above spring class
+
+
+In28Minutes Web services git url
+Spring Web Services - SOAP and RESTful
+https://github.com/in28minutes/spring-web-services
+
+
+
+
+
+
+
+
+Core java git url
+https://github.com/in28minutes/java-a-course-for-beginners
+
+
+
+97-things-every-programmer-should-know
+https://github.com/97-things/97-things-every-programmer-should-know/tree/master/en
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

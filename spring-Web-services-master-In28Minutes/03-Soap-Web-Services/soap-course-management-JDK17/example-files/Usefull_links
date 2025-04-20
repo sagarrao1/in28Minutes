@@ -1,0 +1,13 @@
+Useful Links
+XML Schema - http://edutechwiki.unige.ch/en/XML_Schema_tutorial_-_Basics
+WSDL URl - http://localhost:8080/ws/courses.wsdl
+Spring Web Services - http://projects.spring.io/spring-ws/
+
+we haved JAXB2 Maven Plugin  in pom.xml for xml binding which will convert xml to java  object and vice versa
+
+
+
+to implement security
+// uncomment in WebServiceConfig extend class  to implement security in web service like validating user and password
+user=user
+password=password

@@ -61,7 +61,7 @@ public class WebServiceConfig /* extends WsConfigurerAdapter */{
 	
 	
 	// mapping XSD in spring ws
-	
+//	it will read course-details.xsd from src/main/resources
 	@Bean
 	public XsdSchema coursesSchema() {		
 		return new SimpleXsdSchema ( new ClassPathResource("course-details.xsd"));

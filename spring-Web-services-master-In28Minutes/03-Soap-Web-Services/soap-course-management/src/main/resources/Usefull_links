@@ -6,6 +6,7 @@ Spring Web Services - http://projects.spring.io/spring-ws/
 
 
 to implement security
-// uncomment in WebServiceConfig extend class  to implement security in web service like validating user and password
+// uncomment in WebServiceConfig extend class  to implement security in web service 
+like validating user and password
 user=user
 password=password

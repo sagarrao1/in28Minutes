@@ -35,6 +35,7 @@ public class CourseService {
 	
 	
 	public Status deleteCourse(int id){		
+//		-- deleting in for LinkLoop may get Exception so we use Iterator		
 		Iterator<Course> itr = courseList.iterator();		
 		while(itr.hasNext()) {
 			Course course = itr.next();

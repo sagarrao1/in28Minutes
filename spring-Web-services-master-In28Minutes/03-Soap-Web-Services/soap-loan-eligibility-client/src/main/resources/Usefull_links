@@ -1,0 +1,27 @@
+right click and run SpringBootSoapWSApplication
+
+
+Useful Links
+XML Schema - http://edutechwiki.unige.ch/en/XML_Schema_tutorial_-_Basics
+WSDL URl - http://localhost:8080/ws/loanEligibility.wsdl
+Spring Web Services - http://projects.spring.io/spring-ws/
+
+test this from firefox by adding wizdler extension 
+
+
+
+SoapClient will call soap service and get response
+to capture response, we create rest controller in SpringBootSoapWSApplication
+capture that response from rest client in port 9090 of rest controller
+use postman to submit post request 
+
+ POST   http://localhost:9090/getLoanStatus
+ 
+  
+ {
+    "customerName":"Sagar",
+    "age":40,
+    "yearlyIncome":500000,
+    "cibilScore":750,
+    "employmentMode":"GOVT"
+}

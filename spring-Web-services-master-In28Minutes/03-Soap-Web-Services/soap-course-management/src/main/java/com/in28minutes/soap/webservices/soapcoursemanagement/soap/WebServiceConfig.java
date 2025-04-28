@@ -29,12 +29,12 @@ public class WebServiceConfig /* extends WsConfigurerAdapter */{
 	//Application Context
 	// url -> /ws/*	
 	@Bean
-	public ServletRegistrationBean messageDispatcherServelet(ApplicationContext context) {
+	public ServletRegistrationBean<MessageDispatcherServlet> messageDispatcherServelet(ApplicationContext context) {
 		MessageDispatcherServlet messageDispatcherServlet = new MessageDispatcherServlet();
 		messageDispatcherServlet.setApplicationContext(context);
 		messageDispatcherServlet.setTransformWsdlLocations(true);
 		
-		return new ServletRegistrationBean(messageDispatcherServlet ,"/ws/*");
+		return new ServletRegistrationBean<MessageDispatcherServlet>(messageDispatcherServlet ,"/ws/*");
 	}
 	
 	// we want spring to generate wsdl

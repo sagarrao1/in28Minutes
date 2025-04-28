@@ -1,0 +1,21 @@
+right click and run SpringBootSoapWSApplication
+
+
+Useful Links
+XML Schema - http://edutechwiki.unige.ch/en/XML_Schema_tutorial_-_Basics
+WSDL URl - http://localhost:8080/ws/loanEligibility.wsdl
+Spring Web Services - http://projects.spring.io/spring-ws/
+
+test this from firefox by adding wizdler extension 
+
+enter below wsdl
+http://localhost:8080/ws/loanEligibility.wsdl
+selet wizdler to select GetCourseDeatailRequest
+select  authentication after Go tab and select WSSE PasswordText Authentication
+and username is user and password is password
+click go 
+
+
+
+add below VM argument in run configruatation for JDK 17
+--add-opens=java.xml.crypto/com.sun.org.apache.xml.internal.security=ALL-UNNAMED

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.javatechie.com/soap/loan-eligibility" 
+xmlns:tns="http://www.javatechie.com/soap/loan-eligibility"
+elementFormDefault="qualified">
+ 
+ <xs:element name="CustomerRequest">
+ 	<xs:complexType>
+ 		<xs:sequence>
+ 			<xs:element name="customerName" type="xs:string"/>
+ 			<xs:element name="age" type="xs:int"/>
+ 			<xs:element name="yearlyIncome" type="xs:long"/>
+ 			<xs:element name="cibilScore" type="xs:int"/>
+ 			<xs:element name="employmentMode" type="xs:string"/>
+ 		</xs:sequence> 	
+ 	</xs:complexType> 
+ </xs:element>
+ 
+ <xs:element name="AcknowledgementResponse">
+ 	<xs:complexType>
+ 		<xs:sequence>
+ 			<xs:element name="isEligible" type="xs:boolean"/> 			
+ 			<xs:element name="approvedAmount" type="xs:long"/>
+ 			<xs:element name="criteriaMismatch" type="xs:string" maxOccurs="unbounded"/>
+ 		</xs:sequence> 	
+ 	</xs:complexType> 
+ </xs:element>
+ 
+  
+</xs:schema>
